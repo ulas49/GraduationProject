@@ -9,4 +9,16 @@
   box-sizing: border-box;
 }
 
+:root{
+  --col1: #ffc20e;
+}
+
+.mainhead1{
+  -webkit-text-stroke: 3px #54B4D3;
+  color: transparent;
+  font-size: 10rem;
+  font-weight: 900;
+  text-align: center;
+  
+}
 
