@@ -100,13 +100,13 @@ const Workouts = () => {
           workouts && workouts.map((item, index) => {
             return (
               <SwiperSlide key={index} >
-                <div className='swiper-slide'
+                <div className='swiper-slide cursor-pointer'
                   style={{
                     backgroundImage: `url(${item.imageUrl})`,
                   }}
-                //   onClick={() => {
-                //     window.location.href = `/workout/${item.type}`
-                //   }}
+                  onClick={() => {
+                    window.location.href = `/workout/${item.type}`
+                  }}
                 >
                   <div className='swiper-slide-content'>
                     <h2>{item.type}</h2>
