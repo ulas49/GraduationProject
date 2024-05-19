@@ -48,5 +48,115 @@
 }
 
 
+.buttonComp{
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: min-content;
+  box-shadow: 1px 20px 35px 0px #3c8bdf;
+  border: 1px solid #007AFF;
+  margin-top: 5px;
+}
 
 
+.buttonOutlinedInput{
+  border-radius: 8px;
+  border: 0.5px solid #4d4c4c;
+  background-color: transparent;
+  color: #404040;
+  outline: none;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttonOutlinedInput:focus-within{
+  border-color: #5B86E5;
+}
+
+
+.textInputComp{
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #404040;
+}
+
+.textInputComp:focus{
+  outline: none;
+}
+
+.textChipComp{
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #0266d1;
+  color: #007AFF;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.workoutCard{
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  border: 1px solid #404040;
+  border-radius: 14px;
+  box-shadow: 1px 6px 20px 0px #7396bd;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.workoutCategory{
+  width: fit-content;
+  font-size: 14px;
+  color: #007AFF;
+  font-weight: 500;
+  background: #055cb9;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+
+.workoutName{
+  font-size: 20px;
+  color: #404040;
+  font-weight: 600;
+}
+
+.workoutSets{
+  font-size: 15px;
+  color: #4d4c4c;
+  font-weight: 500;
+  display: flex;
+  gap: 6px;
+}
+
+.workoutFlex{
+  display: flex;
+  gap: 16px;
+}
+
+.workoutDetails{
+  font-size: 15px;
+  color: #404040;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
