@@ -43,6 +43,14 @@ const Navbar = () => {
             Exercises
           </Link>
           <Link
+            href="/dashboard"
+            className={`hover:text-[#54B4D3] ${
+              pathname === "/dashboard" ? "active" : ""
+            } font-medium`}
+          >
+            Dashboard
+          </Link>
+          <Link
             href="/contact"
             className={`hover:text-[#54B4D3] ${
               pathname === "/contact" ? "active" : ""
