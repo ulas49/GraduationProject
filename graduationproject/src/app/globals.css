@@ -125,7 +125,7 @@
 .workoutCategory{
   width: fit-content;
   font-size: 14px;
-  color: #007AFF;
+  color: #FFFFFF;
   font-weight: 500;
   background: #055cb9;
   padding: 4px 10px;
@@ -159,4 +159,13 @@
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.WorkoutsLeft{
+  flex: 0.2;
+  height: fit-content;
+  padding: 18px;
+  border: 1px solid #404040;
+  border-radius: 14px;
+  box-shadow: 1px 6px 20px 0px #7396bd;
 }

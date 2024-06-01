@@ -12,12 +12,9 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center justify-center  h-[60px]  sticky top-0 z-10 border-b border-slate-400 ">
+    <div className="flex items-center justify-center  h-[60px]  sticky top-0 z-10 border-b border-slate-400 bg-white">
       <div className=" w-full px-0 py-6 flex gap-x-14 items-center justify-between">
-        <Link
-          href="/"
-          className=" flex items-center font-semibold text-lg "
-        >
+        <Link href="/" className=" flex items-center font-semibold text-lg ">
           <img
             src="https://i.pinimg.com/736x/3d/30/bf/3d30bf0c579fa14498b8b03ef53067f0.jpg"
             alt="logo"
@@ -49,6 +46,14 @@ const Navbar = () => {
             } font-medium`}
           >
             Dashboard
+          </Link>
+          <Link
+            href="/workouts"
+            className={`hover:text-[#54B4D3] ${
+              pathname === "/workouts" ? "active" : ""
+            } font-medium`}
+          >
+            Workouts
           </Link>
           <Link
             href="/contact"
