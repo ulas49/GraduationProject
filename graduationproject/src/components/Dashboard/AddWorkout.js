@@ -3,11 +3,11 @@ import {useState} from 'react'
 import TextInput from '../TextInput'
 import Button from '../Button'
 
-const AddWorkout = ({workout,setWorkout}) => {
+const AddWorkout = ({ workout, setWorkout, addNewWorkout, buttonLoading }) => {
   return (
-  <div className='weeklyCard p-4 sm:p-[24px]' >
-    <div className='weeklyTitle text-[14px]  '>Add New Workout</div>
-    <TextInput
+    <div className="weeklyCard p-4 sm:p-[24px]">
+      <div className="weeklyTitle text-[14px]  ">Add New Workout</div>
+      <TextInput
         label="Workout"
         textArea
         rows={10}
@@ -25,10 +25,12 @@ const AddWorkout = ({workout,setWorkout}) => {
       <Button
         text="Add Workout"
         small
-
+        onClick={() => addNewWorkout()}
+        isLoading={buttonLoading}
+        isDisabled={buttonLoading}
       />
-  </div>
-  )
-}
+    </div>
+  );
+};
 
 export default AddWorkout

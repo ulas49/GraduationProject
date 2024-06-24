@@ -5,15 +5,23 @@ import "./Navbar.css"
 import { FaRegUserCircle } from "react-icons/fa";
 import { LuUserCog2 } from "react-icons/lu";
 import { usePathname } from "next/navigation";
+import { useDispatch, useSelector } from 'react-redux';
+import { logout } from '@/redux/reducers/userSlice';
+import Image from 'next/image';
+import { Avatar } from "@mui/material";
+
 
 
 
 const Navbar = () => {
   const pathname = usePathname();
+  const dispatch = useDispatch();
+  const { currentUser } = useSelector((state) => state.user);
+
 
   return (
     <div className="flex items-center justify-center  h-[60px]  sticky top-0 z-10 border-b border-slate-400 bg-white">
-      <div className=" w-full px-0 py-6 flex gap-x-14 items-center justify-between">
+      <div className=" w-full pxs-0 py-6 flex gap-x-14 items-center justify-between">
         <Link href="/" className=" flex items-center font-semibold text-lg ">
           <img
             src="https://i.pinimg.com/736x/3d/30/bf/3d30bf0c579fa14498b8b03ef53067f0.jpg"
@@ -65,8 +73,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center justify-center gap-x-4">
-          <LuUserCog2 className=" w-8 h-8 cursor-pointer" />
-          <button className="mr-8 font-medium border border-black p-1 rounded-lg hover:bg-[#54B4D3] hover:text-white hover:border-[#54B4D3] transition">
+          <Avatar src={currentUser?.img}>{currentUser?.name[0]}</Avatar>
+
+          <button
+            className="mr-8 font-medium border border-black p-1 rounded-lg hover:bg-[#54B4D3] hover:text-white hover:border-[#54B4D3] transition"
+            onClick={() => dispatch(logout())}
+          >
             Logout
           </button>
         </div>
