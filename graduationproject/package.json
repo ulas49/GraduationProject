@@ -12,6 +12,7 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/inter": "^5.0.18",
+    "@hookform/resolvers": "^3.6.0",
     "@mui/icons-material": "^5.15.18",
     "@mui/joy": "^5.0.0-beta.36",
     "@mui/material": "^5.15.16",
@@ -24,6 +25,7 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.52.0",
     "react-horizontal-datepicker": "^2.0.3",
     "react-horizontal-scrolling-menu": "^7.0.0",
     "react-icons": "^5.2.0",
@@ -32,7 +34,8 @@
     "react-toastify": "^10.0.5",
     "redux-persist": "^6.0.0",
     "styled-components": "^6.1.11",
-    "swiper": "^11.1.1"
+    "swiper": "^11.1.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

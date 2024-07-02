@@ -21,3 +21,14 @@ export const addWorkout = async (token, data) =>
   await API.post(`/user/workout`, data, {
     headers: { Authorization: `Bearer ${token}` },
   });
+
+  export const sendMail = async (formData) => {
+    try {
+      const { data } = await API.post(`/user/contact`, formData);
+      return data;
+    } catch (error) {
+      if (error.response && error.response.data.message)
+        throw new Error(error.response.data.message);
+      throw new Error(error.message);
+    }
+  };

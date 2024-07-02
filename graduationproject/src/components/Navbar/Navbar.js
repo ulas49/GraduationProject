@@ -28,7 +28,7 @@ const Navbar = () => {
             alt="logo"
             className="h-[52px] w-[52px]"
           />
-          Fitness
+          FitLog
         </Link>
         <div className="hidden gap-x-14 md:flex ">
           <Link

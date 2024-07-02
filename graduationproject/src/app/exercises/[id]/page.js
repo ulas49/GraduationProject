@@ -52,6 +52,8 @@ const ExerciseDetail = () => {
 
     fetchExercisesData();
   }, [id]);
+        console.log("detail", exerciseDetail);
+
 
   if (!exerciseDetail) return <div>No Data</div>;
 

@@ -19,7 +19,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   
       fetchExercisesData();
     }, []);
-
+console.log("bodypart",bodyParts);
 
      const handleSearch = async () => {
       if (search) {
